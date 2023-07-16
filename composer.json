@@ -1,0 +1,44 @@
+{
+    "name": "alexoliverwd/form-to-array",
+    "description": "",
+    "keywords": [
+        "form",
+        "html"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alex Oliver",
+            "homepage": "https://github.com/aoliverwd",
+            "role": "Lead"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/aoliverwd/form-to-array/issues"
+    },
+    "prefer-stable": true,
+    "require": {
+        "php": ">=8.0"
+    },
+    "autoload": {
+        "classmap": [
+            "src/"
+        ],
+        "files": [
+            "src/form-to-array.php"
+        ]
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^1.9",
+        "phpunit/phpunit": "^9.5"
+    },
+    "scripts": {
+        "test" : [
+            "./vendor/bin/phpstan analyse -c phpstan.neon",
+            "@unit"
+        ],
+        "unit" : [
+            "./vendor/bin/phpunit -c ./tests/phpunit.xml"
+        ]
+    }
+}

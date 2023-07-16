@@ -1,0 +1,8 @@
+name: form-to-array
+
+services:
+  myservice:
+    type: php:8.0
+    via: cli
+    webroot: .
+    composer_version: '2.2.12'
